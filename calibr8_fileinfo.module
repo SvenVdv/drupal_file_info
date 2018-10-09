@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Implemented hooks for the Custom_fileinfo module.
+ */
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function Custom_fileinfo_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.Custom_fileinfo':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The File General Formatter module allows use file with size.') . '</p>';
+      return $output;
+  }
+}

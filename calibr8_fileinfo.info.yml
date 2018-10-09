@@ -1,0 +1,7 @@
+type: module
+name: Custom File Info
+description: 'A field formatter for rendering file size and extension info.'
+package: Fields
+core: 8.x
+dependencies:
+  - file
